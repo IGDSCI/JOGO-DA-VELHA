@@ -7,26 +7,26 @@
     <title>Jogo da velha</title>
 </head>
 <body>
-    <h1 id="Titulo">Jogo da velha</h1>
-    <div>
-        <img src="Campo_neutro.png" id="img1" onclick="verificaVitoria()">
-        <img src="Campo_neutro.png" id="img2" onclick="verificaVitoria()">
-        <img src="Campo_neutro.png" id="img3" onclick="verificaVitoria()">
-        <br>
-        <img src="Campo_neutro.png" id="img4" onclick="verificaVitoria()">
-        <img src="Campo_neutro.png" id="img5" onclick="verificaVitoria()">
-        <img src="Campo_neutro.png" id="img6" onclick="verificaVitoria()">
-        <br>
-        <img src="Campo_neutro.png" id="img7" onclick="verificaVitoria()">
-        <img src="Campo_neutro.png" id="img8" onclick="verificaVitoria()">
-        <img src="Campo_neutro.png" id="img9" onclick="verificaVitoria()">
+    <div id="fundo">
+        <h1 id="titulo">Jogo da velha</h1>
+        <div>
+            <img src="Campo_neutro.png" id="img1" onclick="verificaVitoria()">
+            <img src="Campo_neutro.png" id="img2" onclick="verificaVitoria()">
+            <img src="Campo_neutro.png" id="img3" onclick="verificaVitoria()">
+            <br>
+            <img src="Campo_neutro.png" id="img4" onclick="verificaVitoria()">
+            <img src="Campo_neutro.png" id="img5" onclick="verificaVitoria()">
+            <img src="Campo_neutro.png" id="img6" onclick="verificaVitoria()">
+            <br>
+            <img src="Campo_neutro.png" id="img7" onclick="verificaVitoria()">
+            <img src="Campo_neutro.png" id="img8" onclick="verificaVitoria()">
+            <img src="Campo_neutro.png" id="img9" onclick="verificaVitoria()">
+        </div>
+        <div id="jogador">É a vez do jogador X</div>
+        <div id="vitorias_X">Vitórias do jogador X: 0</div>
+        <div id="vitorias_O">Vitórias do jogador O: 0</div>
+        <div><input type="button" value="Limpar campo" onclick="reset()" id="botao1"></div>
     </div>
-
-    
-    <div id="jogador">É a vez do jogador X</div>
-    <div id="vitorias_X">Vitórias do jogador X: 0</div>
-    <div id="vitorias_O">Vitórias do jogador O: 0</div>
-    <div><input type="button" value="Limpar campo" onclick="reset()"></div>
 
     <script src="js.js"></script>
     <script>
@@ -125,10 +125,6 @@
                         vitorias_O.innerHTML = 'Vitórias do jogador O: ' + contador_vitorias_O;
                     }
                     reset();
-                }
-                //Nada
-                else {
-                    result.innerHTML = 'Ainda não deu nada';
                 }
             }, 500);
         }
