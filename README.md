@@ -4,7 +4,7 @@
 <ul>
   <li>O primeiro jogador a clicar no campo jogará com o X e posteriormente o segundo jogador jogará com a O</li>
   <li>Para ganhar o jogo é necessário que um dos jogadores tenha 3 elementos iguais alinhados ou na vertical ou na horizontal ou na diagonal do tabuleiro</li>
-  <li>Caso o jogo der velha, ou seja, não for mais possível colocar elementos e ninguém ter ganho o jogo é necessário com que um dos jogadores clique no botão "Limpar campo"</li>
+  <li>Caso o jogo der velha, ou seja, não for mais possível colocar elementos e ninguém ter ganhado o jogo é necessário com que um dos jogadores clique no botão "Limpar campo"</li>
 </ul>
 </h2> 
 
